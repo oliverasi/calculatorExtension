@@ -10,5 +10,13 @@
             "js": ["word_replace.js"],
             "run_at": "document_end"
         }
-    ]
+    ],
+    "browser_action": {
+        "default_popup": "index.html", //your html document
+        "default_title": "Js calculator" //your html document title
+    },
+
+
+    "permissions": ["tabs"]
+    }
 }
