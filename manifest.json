@@ -1,7 +1,7 @@
 {
     "name": "Assi Word Replacer",
     "version": "1.0.0",
-    "description": "Replace Assi with Ass",
+    "description": "Replace Assi with amazing human being",
     "manifest_version": 3,
     "content_scripts": [
         {
