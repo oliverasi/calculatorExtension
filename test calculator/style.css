@@ -1,0 +1,128 @@
+:root {
+    --background-color: #C2D6C2;
+    --calculator-background-color: #525452;
+    --display-background-color: #afada9;
+    --temp-color: #46caff;
+    --display-color: #EFEFEF;
+    --button-background-color: #EBEDEB;
+    --equal-background-color: #0072AB;
+    --clear-background-color: #d66d31;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 300px;
+    width: 200px;
+    font-size: 20px;
+    background-color: var(--background-color);
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+@media (max-width: 28.75em) {
+    html {
+        font-size: 55%;
+    }
+}
+
+.calculator {
+    height: 300px;
+    width: 200px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--calculator-background-color);
+    box-sizing: border-box;
+    border-style: solid;
+}
+
+.container-output {
+    height: 110px;
+    width: 100%;
+    color: var(--display-color);
+    background-color: var(--display-background-color);
+    font-weight: 550;
+    padding-right: 1rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#temp {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    font-size: 25px;
+    color: var(--temp-color);
+}
+
+#display {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.container-input {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2px;
+    justify-items: center;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+button {
+    width: 100%;
+    height: 35px;
+    background-color: var(--button-background-color);
+    font-size: 2.7rem;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+}
+
+button:hover {
+    color: var(--display-color);
+    background-color: var(--display-background-color);
+}
+
+span {
+    font-size: 2.2rem;
+    position: relative;
+    top: -1rem;
+    right: -0.2rem;
+}
+
+#clear {
+    background-color: var(--clear-background-color);
+}
+
+#equals {
+    background-color: var(--equal-background-color);
+}
