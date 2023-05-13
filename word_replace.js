@@ -7,9 +7,9 @@ for(let i=0; i<text.length; i++) {
         replace('Assi', 'Ass')
     } else if(text[i].innerHTML.includes('ASSI')) {
         text[i].innerHTML = text[i].innerHTML.
-        replace('ASSI', 'Ass')
+        replace('ASSI', 'ASS')
     } else if(text[i].innerHTML.includes('assi')) {
             text[i].innerHTML = text[i].innerHTML.
-            replace('assi', 'Ass')
+            replace('assi', 'ass')
     }
 }
